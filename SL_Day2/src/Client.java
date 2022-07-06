@@ -66,7 +66,7 @@ public class Client {
     }
 
     public int balance() {  // 잔액
-        System.out.println("현재 잔액 : " + my_count);
+        System.out.println(getName() + "의 현재 잔액 : " + my_count);
 
         return my_count;
     }
