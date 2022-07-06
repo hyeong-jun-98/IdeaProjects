@@ -43,6 +43,7 @@ public class Bank {
             System.out.println();
             System.out.print("메뉴를 선택하시오 : ");
             num = sc.nextLine();
+            System.out.println();
 
             switch (Integer.parseInt(num)) {
                 case 1:
@@ -84,9 +85,12 @@ public class Bank {
                 System.out.println("종료되었습니다.!!!");
                 break;
             }
+
+            // Runtime.getRuntime().exec("cls")가 안되는 이유는 cmd안에 내장된 명령어이기 때문에 호출할 수 있는 표준 cls.exe 또는 실행파일이 없다.
+            // 이 문제를 해결하려면 cmd를 호출하고 --> 기본 제공 명령어를 호출할  cls를 실행하도록 지시해야 한다.
             if (num.equals("8")) {  // cmd에서 자바 컴파일해서 cls 명령어 실행하기............. cmd에서 한글이 깨짐....됐다,,,,,,,,,,,
                 try {
-                    new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+                    new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();  // cmd를 호출하고 cls명령을 실행. 인터 프리터 출력 채널을 java 프로세스 출력 채털과 연결해야 한다. .inheritIO()메서드를 통해 사용가능
                     break;
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
