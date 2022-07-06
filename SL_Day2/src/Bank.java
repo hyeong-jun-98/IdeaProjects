@@ -20,7 +20,7 @@ public class Bank {
 
         ArrayList<Client> a_Client = new ArrayList<Client>();
 
-        System.out.println("## 메뉴 ##");
+        System.out.println("## 메뉴 ##");             // 메뉴 선택
         System.out.println("** 회원정보 입력은 필수입니다. **");
         System.out.println("1. 회원정보 추가 입력");
         System.out.println("2. 입금");
@@ -29,6 +29,7 @@ public class Bank {
         System.out.println("5. 회원정보 검색");
         System.out.println("6. 회원정보 출력");
         System.out.println("7. 종료");
+        System.out.println("8. cmd 창에서 cls 명령어 수행");
         System.out.println();
         String num = null;
 
@@ -94,31 +95,31 @@ public class Bank {
                 }
             }
         }
-//        while(true) {
+//        while(true) {           // 회원정보 입력
 //            cl = new Client();
 //            a_Client.add(cl);
 //            cl.set_Client();
 //
 //            System.out.print("계속 진행할까요? "); out = sc.nextLine();
 //
-//            if(out.equals("yes")) {
+//            if(out.equals("yes")) {     // yes일 때 계속 입력
 //                System.out.println();
 //                continue;
-//            } else if (out.equals("no")) {
+//            } else if (out.equals("no")) {     // NO면 그만 입력
 //                break;
 //            }
 //        }
 
 
-//        for(int i = 0; i < a_Client.size(); i++) {
+//        for(int i = 0; i < a_Client.size(); i++) {   // 회원정보 입력
 //            a_Client.get(i).set_Client();
 //
 //        }
-//        for(int i = 0; i < a_Client.size(); i++) {
+//        for(int i = 0; i < a_Client.size(); i++) {           // 회원정보 출력
 //            a_Client.get(i).putClient();
 //        }
 
-//        System.out.print("검색 : ");
+//        System.out.print("검색 : ");               // 검색
 //        search = sc.nextLine();
 //
 //        for(int i = 0; i < a_Client.size(); i++) {
@@ -133,7 +134,7 @@ public class Bank {
 //        }
 
 
-//        for(int i = 0; i < a_Client.size(); i++) {
+//        for(int i = 0; i < a_Client.size(); i++) {          // 특정 인믈 잔액 표시
 //            a_Client.get(i).getName().in_count();
 //            System.out.println(a_Client.get(i) + "의 잔액 : " + a_Client.get(i).balance());
 //
