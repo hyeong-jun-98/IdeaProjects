@@ -11,13 +11,11 @@ public class Bank {
         String name = null, bank_account = null, my_count = null;
         Client cl = null;
         String out = null;
-        String search_Name = null;
+        String search_Name = null, search_accountNum = null;
+        String num = null;
 
-//        Client cl1 = new Client();
-//        Client cl2 = new Client();
-//
-//        a_Client.add(cl1);
-//        a_Client.add(cl2);
+
+
 
         ArrayList<Client> a_Client = new ArrayList<Client>();
 
@@ -32,7 +30,6 @@ public class Bank {
         System.out.println("7. 종료");
         System.out.println("8. cmd 창에서 cls 명령어 수행");
         System.out.println();
-        String num = null;
 
         System.out.println("회원정보 입력");
         cl = new Client();
@@ -56,20 +53,20 @@ public class Bank {
                 case 2:  // 이름 검색 후 입금
                     System.out.println("2. 입금");
                     System.out.println();
-                    System.out.print("입금을 실행할 사람의 이름을 쓰시오 : ");   search_Name = sc.nextLine();
+                    System.out.print("입금을 실행할 사람의 계좌번호를 쓰시오 : ");   search_accountNum = sc.nextLine();
 
                     for(int i = 0; i < a_Client.size(); i++) {
-                        if(search_Name.equals(a_Client.get(i).getName())) {
+                        if(search_accountNum.equals(a_Client.get(i).getBank_account_number())) {
                             a_Client.get(i).in_count();
                         }
                     }
                     break;
                 case 3:   // 이름 검색 후 출금
                     System.out.println("3. 출금");
-                    System.out.print("출금을 실행할 사람의 이름을 쓰시오 : ");   search_Name = sc.nextLine();
+                    System.out.print("출금을 실행할 계좌번호를 쓰시오 : ");   search_accountNum = sc.nextLine();
 
                     for(int i = 0; i < a_Client.size(); i++) {
-                        if(search_Name.equals(a_Client.get(i).getName())) {
+                        if(search_accountNum.equals(a_Client.get(i).getBank_account_number())) {
                             a_Client.get(i).out_count();
                         }
                     }

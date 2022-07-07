@@ -43,12 +43,13 @@ public class Client {
     public int in_count() {   // 입금
         Scanner sc = new Scanner(System.in);
         System.out.print("입금 금액 : ");  in_count = sc.nextInt();
-        my_count += in_count;
-        balance();
         if (in_count < 0) {
             System.out.println("다시 입력하십시오.");
             return -1;
         }
+        my_count += in_count;
+        balance();
+
         return in_count;
     }
 
@@ -56,12 +57,12 @@ public class Client {
         Scanner sc = new Scanner(System.in);
         System.out.print("출금 금액 : ");
         out_count = sc.nextInt();
-        my_count -= out_count;
-        balance();
         if (out_count > my_count) {
             System.out.println("잔액보다 많습니다. 다시 입력하십시오.");
             return -1;
         }
+        my_count -= out_count;
+        balance();
         return out_count;
     }
 
