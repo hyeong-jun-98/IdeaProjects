@@ -4,19 +4,40 @@
 
     </head>
     <body>
-        <h1>LOGIN</h1> 
+        <h1>Member_Info_input</h1> 
         <hr size="2">
 
-        <form action="dummy.jsp" id="login_forn">         <!--사이트 이동-->
+        <form action = "member_register.jsp"  id="member_info">
 
-            ID <input type="text" id="user_id"><br>         <!--ID 입력-->
-            PW <input type="password" id="user_pw">     <!--비밀번호 입력-->
-            <input type="submit" value = "login">           <!-- 전송버튼-->
+            Name : <input type="text" id="name_id" name="input_name"><br>
+            Phone Num : <input type="text" id="phone_num_id" name="input_phone_num"><br>
+            Email : <input type="text" id="email_id" name="input_email"><br><br>
+            
+           ** Gender ** <br>
+            Man -><input type = "radio" id="man_id" name="sex" value = "man"><br>
+            Woman -><input type = "radio" id="woman_id" name ="sex" value = "woman"><br><br>
 
+            <input type="submit" value="Go !">
+
+           
+            
+            <hr size="2">
         </form>
 
-        
-        
+        <table border="1">
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </table>
 
 
 
