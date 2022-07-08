@@ -27,14 +27,14 @@ public class Product implements Serializable {
         sc.nextLine();
     }
 
-//    public void putProduct() {
-//        System.out.println("name : " + name);
-//        System.out.println("Serial_Num : " + serial_no);
-//        System.out.println("Price : " + price);
-//        System.out.println("Count : " + quantity);
-//        System.out.println("Expired : " + expired);
-//        System.out.println();
-//    }
+    public void putProduct() {
+        System.out.println("name : " + name);
+        System.out.println("Serial_Num : " + serial_no);
+        System.out.println("Price : " + price);
+        System.out.println("Count : " + quantity);
+        System.out.println("Expired : " + expired);
+        System.out.println();
+    }
 
 //    @Override
 //    public String toString() {
