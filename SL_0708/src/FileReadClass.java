@@ -9,7 +9,7 @@ public class FileReadClass {
         // 하드디스크의 특정파일과 fileStream 객체를 연결해준다.
         // 그러면 이제부터는 fileStream이라는게 파일을 담당한다.(이걸로 접근할 수 있다는 얘기이다.)
 
-        FileInputStream fileStream = new FileInputStream("C:\\datatest\\honjong.txt");
+        FileInputStream fileStream = new FileInputStream("C:\\datatest\\product.txt");
 
          // 프로그래머가 객체작업을 하려면 ObjectInputStream을 사용해줘야 한다.
         // 그래서 objectInputStream과 fileStream을 연결해줘야 한다.
