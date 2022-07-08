@@ -10,17 +10,14 @@ public class Client {
     int in_count, out_count;
 
 //    public void Client(String name, String bank_account_number, int my_count) {
-//        this.my_count = my_count;
-//        this.in_count = in_count;
-//        this.out_count = out_count;
 //        this.name = name;
 //        this.bank_account_number = bank_account_number;
+//        this.my_count = my_count;
+
 //    }
 
 
     public void set_Client() {  // 고객정보 입력
-
-
         Scanner sc = new Scanner(System.in);
         System.out.print("이름 : ");
         name = sc.nextLine();
@@ -44,7 +41,7 @@ public class Client {
         Scanner sc = new Scanner(System.in);
         System.out.print("입금 금액 : ");  in_count = sc.nextInt();
         if (in_count < 0) {
-            System.out.println("다시 입력하십시오.");
+            System.out.println("금액이 잘못되었습니다. 다시 입력하십시오.");
             return -1;
         }
         my_count += in_count;
@@ -68,7 +65,6 @@ public class Client {
 
     public int balance() {  // 잔액
         System.out.println(getName() + "의 현재 잔액 : " + my_count);
-
         return my_count;
     }
 
