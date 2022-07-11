@@ -66,7 +66,8 @@ public class Play {
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 
 //        Product p1 = (Product) objectInputStream.readObject();
-
+        // 기존의 객체(a_client)에 데이터가 저장되어 있는데 여기서는 새로운 객체(arraylist)에서 기존의 객체의 데이터를 읽어와서 새로 넣어준다.
+        // 그리고 Product로 형변환을 시켜서 읽어온 데이터를 출력시켜준다.
         ArrayList arrayList = (ArrayList) objectInputStream.readObject();
         Product p = (Product) arrayList.get(0);
         p.putProduct();
