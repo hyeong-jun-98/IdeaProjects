@@ -73,9 +73,10 @@ public class Play {
         p.putProduct();
         p = (Product) arrayList.get(1);
         p.putProduct();
-
-
         objectInputStream.close();
     }
 
 }
+// 어떤 것이든 파일에서 객체들의 정보를 읽어올 때 주의할 부분!!
+// 반드기 저장된 객체들의 정보를 저장한만큼 읽어와야 한다. (갯수를 미리 정해놔야 한다는 뜻)
+// 마지막에 저장할 때 사용한 컨테이너의 형태 그갣로 읽어와야 한다.
