@@ -14,9 +14,6 @@ public class Bank {
         String search_Name = null, search_accountNum = null;
         String num = null;
 
-
-
-
         ArrayList<Client> a_Client = new ArrayList<Client>();
 
         System.out.println("## 메뉴 ##");             // 메뉴 선택
