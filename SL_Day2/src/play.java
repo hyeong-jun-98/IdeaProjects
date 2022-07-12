@@ -48,35 +48,35 @@ public class play {
 
 // 우리가 만든 회원정보 객체를 Arraylist에 저장할 수 있도록 코드를 작성해본다.
 // 중요한 것은 Arraylist에 특정 타입(클래스를) 어떻게 저장하는가하는 부분이다.
-//
-//        member member1 = new member();
-//        member member2 = new member();
-//
-//        ArrayList <member> members = new ArrayList<member>();
-//
-//        members.add(member1);
-//        members.add(member2);
-//
-//        members.get(0).setMemberInfo();
-//        members.get(0).putMemberInfo();
-//        members.get(1).setMemberInfo();
-//        members.get(1).putMemberInfo();
-//
+
+        member member1 = new member();
+        member member2 = new member();
+
+        ArrayList <member> members = new ArrayList<member>();
+
+        members.add(member1);
+        members.add(member2);
+
+        members.get(0).setMemberInfo();
+        members.get(0).putMemberInfo();
+        members.get(1).setMemberInfo();
+        members.get(1).putMemberInfo();
 
 
-        Runtime runtime = Runtime.getRuntime();  // 계산기 실행
 
-//        try {
-//            runtime.exec(".exe");
-//        } catch (IOException e) {
-//            e.printStackTrace();
+//        Runtime runtime = Runtime.getRuntime();  // 계산기 실행
+//
+////        try {
+////            runtime.exec(".exe");
+////        } catch (IOException e) {
+////            e.printStackTrace();
+////        }
+//
+//       try {
+//            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+//        } catch (IOException e){
+//            Runtime.getRuntime().exec("clear");
 //        }
-
-       try {
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-        } catch (IOException e){
-            Runtime.getRuntime().exec("clear");
-        }
 
 
 
