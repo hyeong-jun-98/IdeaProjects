@@ -2,6 +2,13 @@ package Constructor;
 
 public class Warrior extends Human {
 
+    public Warrior(String n, float h, float m, float s) {
+        hName = n;
+        hHp = h;
+        hMp = m;
+        hSt = s;
+    }
+
     Warrior() {
         this.hName = null;
         this.hHp = 0.0f;
@@ -10,16 +17,15 @@ public class Warrior extends Human {
         this.weapon = null;
     }
 
-    public Warrior(String n, float h, float m, float s) {
-        this.hName = n;
-        this.hHp = h;
-        this.hMp = m;
-        this.hSt = s;
-        this.weapon = "단검";
-    }
-
 
     void Attack() {
         System.out.println("일반공격");
     }
+
+    void useWeapon() {
+        System.out.println("무기사용");
+    }
+
 }
+
+

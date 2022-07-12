@@ -5,6 +5,20 @@ public abstract class Human {
     static float hHp;
     static float hMp;
     static float hSt;
+
+    public String gethName() {
+        return hName;
+    }
+    public float gethHp() {
+        return hHp;
+    }
+    public float gethMp() {
+        return hMp;
+    }
+    public float gethSt() {
+        return hSt;
+    }
+
     static String weapon;
 
     Human() {

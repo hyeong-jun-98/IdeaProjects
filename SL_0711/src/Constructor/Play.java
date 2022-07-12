@@ -21,6 +21,9 @@ public class Play {
         animal.putFishInfo();
         animal2.putBirdInfo();
 
+        String objectType = animal.getClass().getName();
+        System.out.println("object type : " + objectType);
+
 
     }
 }
