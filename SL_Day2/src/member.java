@@ -83,7 +83,45 @@ public class member {
         while (rs.next()) {  // next() 메소드를 통해 선택되는 행을 바꿀 수 있다.(행 단위)  (다음 행이 있으면 true 반환)  커서가 내려가면서 잡는다
             System.out.println(rs.getString(1) + "\t" + rs.getString(2) + "\t" + rs.getString(3) + "\t" + rs.getString(4));
         }
-
+        rs.close();
         stmt.close();
+    }
+
+
+    public void db_search() throws SQLException {    // 특정 데이터 검색.
+        Scanner sc = new Scanner(System.in);
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        // jdbc 드라이버를 로딩하고 접속하는 과정이 필요함
+        Connection conn;  // database에 연결할 때 사용하는 레퍼런스 변수
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/sample", "root", "");
+        System.out.println("접속완료");
+
+        System.out.print("검색어를 입력하세요 : ");
+        String search = sc.nextLine();
+
+        Statement stmt = conn.createStatement();  // ResultSet은 Statement를 통해 값을 저장할 수 있다.
+        ResultSet rs = stmt.executeQuery("select * from member_t where name = '"+ search +"'");
+        //  이름만 검색
+
+        while (rs.next()) {  // next() 메소드를 통해 선택되는 행을 바꿀 수 있다.(행 단위)  (다음 행이 있으면 true 반환)  커서가 내려가면서 잡는다
+
+            System.out.println(rs.getString(1) + "\t" + rs.getString(2) + "\t" + rs.getString(3) + "\t" + rs.getString(4));
+
+//            try {             // 전체 검색
+//                if (rs.getString(1).equals(search) || rs.getString(2).equals(search) || rs.getString(3).equals(search) || rs.getString(4).equals(search)) {
+//                    System.out.println(rs.getString(1) + "\t" + rs.getString(2) + "\t" + rs.getString(3) + "\t" + rs.getString(4));
+//                }
+//            } catch (NullPointerException e) {
+//
+//            }
+
+        }
+
+
     }
 }
