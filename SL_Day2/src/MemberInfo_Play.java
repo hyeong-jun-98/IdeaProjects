@@ -5,8 +5,20 @@ public class MemberInfo_Play {
         member mb = new member();
 
 //        mb.setMemberInfo();
-        mb.db_conn();
-        mb.db_search();
+//        mb.setMemberInfo();
+//        mb.db_conn();
+//        mb.db_select();
+        mb.db_login();
+
+
+
+
+
+
+
+//        mb.db_search();
+//        mb.db_delete();
+//        mb.db_select();
 
 
 
