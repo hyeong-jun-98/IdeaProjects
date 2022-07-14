@@ -7,7 +7,7 @@ public class MemberInfo_Play {
 //        mb.setMemberInfo();
 //        mb.setMemberInfo();
 //        mb.db_conn();
-//        mb.db_select();
+        mb.db_select();
         mb.db_login();
 
 
