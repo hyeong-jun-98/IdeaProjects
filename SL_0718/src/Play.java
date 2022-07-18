@@ -6,7 +6,7 @@ public class Play {
         Random rd = new Random();
         int [] arr = new int[6];
        for(int i = 0; i < 6; i++) {
-            arr[i] = rd.nextInt(10) + 1;
+            arr[i] = rd.nextInt(45) + 1;
             for (int j = 0; j < i; j++) {
                 if(arr[i] == arr[j]) {
                   i--;
