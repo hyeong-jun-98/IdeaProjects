@@ -10,7 +10,7 @@ public class calculator {
 
 
 
-    /*    String name = null;
+       String name = null;
         int weight = 0;
         double height = 0.0;
 
@@ -35,19 +35,19 @@ public class calculator {
 
         System.out.println(bmi);
 
-*/
 
-//        int a = 60, b = 50, c = 70;
-//        int sum = a + b + c;
-//        double avg = sum / 3.0;  // 변수를 쓰면 램의 공간을 차지하기 때문에..
-//
-//        if (a < 40 || b < 40 || c < 40) {
-//            System.out.println("불합격");
-//        } else if(avg >= 60) {
-//            System.out.println("합격");
-//        } else {
-//            System.out.println("불합격");
-//        }
+
+        int a = 60, b = 50, c = 70;
+        int sum = a + b + c;
+        double avg = sum / 3.0;  // 변수를 쓰면 램의 공간을 차지하기 때문에..
+
+        if (a < 40 || b < 40 || c < 40) {
+            System.out.println("불합격");
+        } else if(avg >= 60) {
+            System.out.println("합격");
+        } else {
+            System.out.println("불합격");
+        }
 
     }
 }
